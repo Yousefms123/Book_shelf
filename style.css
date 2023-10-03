@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Quicksand";
+}
+.wrapper {
+	width: 70%;
+	margin: 3rem auto;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+	margin-top: 1rem;
+}
+.shelf {
+	display: flex;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+}
+.book-card {
+	width: 32%;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #939393;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+.book-card img {
+	width: 100%;
+	object-fit: cover;
+	height: 35vh;
+	border-radius: 9px 9px 0 0;
+	-webkit-border-radius: 9px 9px 0 0;
+	-moz-border-radius: 9px 9px 0 0;
+	-ms-border-radius: 9px 9px 0 0;
+	-o-border-radius: 9px 9px 0 0;
+}
+.book-card .card-body {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+}
+.book-card .card-body div {
+	display: flex;
+	align-items: center;
+	column-gap: 0.5rem;
+}
+.book-card .card-body div p {
+	font-weight: 700;
+	font-size: 18px;
+}
+.book-card .card-body div span {
+	font-size: 14px;
+}
+.btn {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	width: 10rem;
+	height: 2rem;
+	cursor: pointer;
+	font-weight: 700;
+}
+.btn-add {
+	background-color: #5c99ff;
+	color: #fff;
+	border: 1px solid #5c99ff;
+	margin-bottom: 1rem;
+}
+#newBookBtn {
+	background-color: transparent;
+	color: #5c99ff;
+	border: 1px solid #5c99ff;
+}
+#bookForm {
+	margin-top: 1rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+}
+#bookForm input {
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border: 1px solid #8b8b8b;
+	outline: none;
+}
+.form-container {
+	display: none;
+}
+.show {
+	display: block;
+}
+.empty-img {
+	height: 50vh;
+}
+@media (max-width: 576px) {
+	.wrapper {
+		width: 90%;
+		margin: auto;
+		margin-top: 3rem;
+	}
+	.book-card {
+		width: 100%;
+	}
+	#bookForm {
+		margin-top: 1rem;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+	.book-card .card-body div p {
+		font-weight: 700;
+		font-size: 16px;
+	}
+	.book-card .card-body div span {
+		font-size: 13px;
+	}
+}

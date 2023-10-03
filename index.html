@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="img/sit-icon.svg" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Bookshelf</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<button class="btn" id="newBookBtn">NEW BOOK</button>
+			<div class="form-container" id="formContainer">
+				<form id="bookForm">
+					<input type="text" id="title" placeholder="Title" required />
+					<input type="text" id="author" placeholder="Author" required />
+					<input type="url" id="imageURL" placeholder="Image URL" required />
+					<input type="date" id="publishDate" required />
+					<button class="btn btn-add" id="submitBooks" type="submit">Add</button>
+				</form>
+			</div>
+			<div class="container" id="container">
+				<h2>All books:-</h2>
+				<img class="empty-img" id="empty" src="img/empty-img.svg" alt="" />
+				<!-- <div class="shelf" id="shelf1"></div>
+				<div id="empty"></div> -->
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
